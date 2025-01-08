@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
+import { FaSignOutAlt, FaUser, FaSignInAlt, FaBuilding } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -45,22 +46,22 @@ const Header = () => {
                 href='login.html'
                 className='mr-3 text-gray-800 hover:text-gray-600'
               >
-                <i className='fa fa-sign-in'></i> Login
+                <FaSignInAlt className='inline m-1' /> Login
               </a>
               <a
                 href='register.html'
                 className='mr-3 text-gray-800 hover:text-gray-600'
               >
-                <i className='fa fa-user'></i> Register
+                <FaUser className='inline m-1' /> Register
               </a>
               <a href='my-rooms.html'>
-                <i className='fa fa-building'></i> My Rooms
+                <FaBuilding className='inline m-1' /> My Rooms
               </a>
               <a
                 href='login.html'
                 className='mx-3 text-gray-800 hover:text-gray-600'
               >
-                <i className='fa fa-sign-out'></i> Sign Out
+                <FaSignOutAlt className='inline m-1' /> Sign Out
               </a>
             </div>
           </div>
